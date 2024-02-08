@@ -1,4 +1,4 @@
-# S.Leschev: React Custom Hooks
+# Md Tanvir Ahamed Shanto: React Custom Hooks
 
 ### Supercharge Your Projects with My Custom Hooks
 
@@ -8,11 +8,11 @@ React Hooks are a feature introduced in React version 16.8 that revolutionized t
 
 React custom hooks are reusable functions that allow developers to abstract and encapsulate complex logic in a reusable manner. Custom hooks are created by combining existing React hooks or other custom hooks. They enable developers to extract common logic from components and share it across different parts of an application. Custom hooks follow a naming convention of using the "use" prefix, which allows them to leverage the benefits of React's rules of hooks. By creating custom hooks, developers can modularize and organize their code, making it more readable, maintainable, and testable. These hooks can encapsulate any kind of logic, such as API calls, form handling, state management, or even abstracting external libraries. React custom hooks are a powerful tool that promotes code reusability and reduces duplication, making development more efficient and scalable.
 
-React Custom Hooks @ 2023, S. Leschev. Google Engineering Level: L6+
+React Custom Hooks @ 2023, Md Tanvir Ahamed Shanto.
 
 # Table of Contents
 
-- [S.Leschev: React Custom Hooks](#sleschev-react-custom-hooks)
+- [Md Tanvir Ahamed Shanto: React Custom Hooks](#sleschev-react-custom-hooks)
   - [1. `useArray`](#1-usearray)
   - [2. `useAsync`](#2-useasync)
   - [3. `useClickOutside`](#3-useclickoutside)
