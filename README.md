@@ -42,6 +42,7 @@ React Custom Hooks @ 2023, Md Tanvir Ahamed Shanto.
   - [27. `useTranslation`](#27-usetranslation)
   - [28. `useUpdateEffect`](#28-useupdateeffect)
   - [29. `useWindowSize`](#29-usewindowsize)
+  - [30. `useDateTime`](#30-useDateTime)
   - [Available Scripts](#available-scripts)
     - [`npm start`](#npm-start)
     - [`npm test`](#npm-test)
@@ -1731,6 +1732,60 @@ export default function WindowSizeComponent() {
   );
 }
 ```
+
+## 30. [`useDateTime`](https://github.com/mdtanvirahamedshanto/react-custom-hooks/blob/main/src/hooks/useUpdateEffect/useUpdateEffect.js)
+
+```javascript
+export default function getDate(value, type, inMS) {
+  if (!type) {
+    return value;
+  }
+
+  if (!inMS) {
+    value = value * 1000;
+  }
+
+  const date = new Date(value);
+
+  let options;
+
+  if (type === "date") {
+    options = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+  } else if (type === "time") {
+    options = {
+      hour: "numeric",
+      minute: "numeric",
+    };
+  }
+
+  return new Intl.DateTimeFormat("en-us", options).format(date);
+}
+```
+
+. How to use...
+
+```javascript
+import getDate from "./getDate";
+
+const ShowDate = () => {
+  const weatherData = new Date().getTime() / 1000;
+  return (
+    <div>
+      {getDate(weatherData, "time", false)} -{" "}
+      {getDate(weatherData, "date", false)}
+    </div>
+  );
+};
+
+export default ShowDate;
+```
+
+[🔝 Back to table of contents](#table-of-contents)
 
 <br />
 
